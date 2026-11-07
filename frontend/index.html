@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talent Hub | Career Opportunities</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#"><span class="brand-mark">T</span><span>talent<span class="brand-light">hub</span></span></a>
+      <div class="side-label">WORKSPACE</div>
+      <nav id="navigation">
+        <button class="nav-item active" data-view="overview"><span>◫</span> Overview</button>
+        <button class="nav-item" data-view="jobs"><span>⌕</span> Explore jobs</button>
+        <button class="nav-item student-only" data-view="profile"><span>☺</span> My profile</button>
+        <button class="nav-item student-only" data-view="applications"><span>▤</span> My applications</button>
+        <button class="nav-item student-only" data-view="interviews"><span>◷</span> Interviews</button>
+        <button class="nav-item student-only" data-view="offers"><span>◇</span> Offers</button>
+        <button class="nav-item company-only" data-view="postjob"><span>＋</span> Post a job</button>
+        <button class="nav-item company-only" data-view="candidates"><span>♙</span> Candidates</button>
+        <button class="nav-item company-only" data-view="slots"><span>◷</span> Interview slots</button>
+        <button class="nav-item admin-only" data-view="admin"><span>▦</span> Administration</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="help-card"><div class="help-icon">✦</div><b>Build your future</b><p>Discover opportunities that match your ambition.</p></div><button class="nav-item" id="logout"><span>↪</span> Sign out</button></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div><div class="eyebrow">CAREER & PLACEMENT PLATFORM</div><h1 id="page-title">Overview</h1></div><div class="top-actions"><span class="role-pill" id="role-pill">Guest</span><div class="avatar" id="avatar">G</div></div></header>
+      <section id="content" class="content"></section>
+    </main>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
